@@ -1,0 +1,76 @@
+/* Stylesheet für Lückentextübungen */
+
+.lueckentext-quiz {
+	clear: both;
+	display: block;
+	page-break-before: always;
+	page-break-inside: avoid;
+}
+
+.lueckentext-quiz h2 {
+	margin: 0px;
+	padding: 15px 20px;
+	clear: both;
+}
+
+.lueckentext-quiz p {
+	margin: 0px;
+	padding: 10px;
+	line-height: 2.5em;
+	clear: both;
+}
+
+.lueckentext-quiz .daten-pool {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 0px;
+	padding: 5px 0px;
+	line-height: normal;
+	border-top: 1px solid #d0d0d0;
+}
+
+.lueckentext-quiz .luecke {
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	background: #ffffff;
+	border: 1px solid #c0c0c0;
+	letter-spacing: 5px;
+}
+
+.lueckentext-quiz .luecke_i {
+	white-space: nowrap;
+}
+
+.lueckentext-quiz .luecke img,
+.lueckentext-quiz .luecke_i img {
+	margin: 0px;
+	vertical-align: middle;
+}
+
+
+.lueckentext-quiz .luecke_i input {
+	margin: 0px 0px 0px 2px;
+	padding: 0px;
+	width: 120px;
+	border: 1px solid #c0c0c0;
+	font-size: 100%;
+	z-index: 100;
+}
+
+.lueckentext-quiz .feld {
+	display: block;
+	float: left;
+	margin: 0px 10px;
+	padding: 0.2em 0.7em;
+	border: 1px solid #808080;
+	line-height: normal;
+}
+
+.lueckentext-quiz .luecke .feld {
+	display: inline;
+	float: none;
+	margin: 0px;
+	padding: 0px 5px;
+}
+

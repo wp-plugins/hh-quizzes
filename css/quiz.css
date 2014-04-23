@@ -1,0 +1,30 @@
+/* Stylesheet für interaktive Lernaufgaben und Übungen */
+@import url(anzeige-blocker.css);
+@import url(matching.css);
+@import url(lueckentext.css);
+@import url(memo.css);
+@import url(multiplechoice.css);
+@import url(jumble.css);
+@import url(suchsel.css);
+@import url(buchstabenraten.css);
+@import url(kreuzwort.css);
+
+.quiz-gezogen {
+	position: relative !important;
+	display: block;
+}
+
+.anvisiert {
+	border: 1px solid red !important;
+	background: #ffc0c0 !important;
+}
+
+.quiz-bewertung {
+	float: none;
+	clear: both;
+	border: 1px solid #00ff00;
+	background: #c0ffc0;
+	font-weight: bold;
+	text-align: center;
+}
+
