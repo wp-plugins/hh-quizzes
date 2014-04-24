@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: HH Quiz
+Plugin Name: HH Quizzes
 Plugin URI: http://helmut.hirner.at/2012/02/test-2/
 Description: Zur einfachen Verwendung des GPL JavaScript-Framewoks gleichen Namens von Felix Riesterer - es ermöglicht das Erstellen verschieder Quiz
 Version: 1.1.1
@@ -28,15 +28,15 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 
 
-function hhquiz_script() {
-wp_enqueue_script('Quiz', WP_CONTENT_URL . '/plugins/hhquiz/quiz.js');
+function hhquizzes_script() {
+wp_enqueue_script('hhquizzes', WP_CONTENT_URL . '/plugins/hh-quizzes/quiz.js');
 }    
  
-add_action('wp_enqueue_scripts', 'hhquiz_script'); // For use on the Front end (ie. Theme)
+add_action('wp_enqueue_scripts', 'hhquizzes_script'); // For use on the Front end (ie. Theme)
 
-function add_hhquiz_styles() {
-wp_register_style( 'blocker-css', WP_CONTENT_URL . '/plugins/hhquiz/css/quiz.css');
+function add_hhquizzes_styles() {
+wp_register_style( 'blocker-css', WP_CONTENT_URL . '/plugins/hh-quizzes/css/quiz.css');
 wp_enqueue_style( 'blocker-css' );
 } 
-add_action('init', 'add_hhquiz_styles');
+add_action('init', 'add_hhquizzes_styles');
 ?>

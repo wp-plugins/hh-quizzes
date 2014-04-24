@@ -1,4 +1,4 @@
-=== HH Quiz ===
+=== HH-Quizzes ===
 Contributors: Helmut Hirner
 Donate link: http://www.hirner.at/
 Tags: JavaScript, Quiz, multiple choice,
