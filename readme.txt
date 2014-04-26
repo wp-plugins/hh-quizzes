@@ -11,6 +11,7 @@ HH Quiz just enables the Quiz JavaScript-Framework (GNU Lesser General Public Li
 == Description ==
 
 With the Quiz JavaSript-Framework you can simple create some different quizzes in a post or page.
+
 *    Matching Quiz (match pairs)
 *    Matching Quiz (match groups)
 *    Gap Fill Quiz
@@ -21,6 +22,7 @@ With the Quiz JavaSript-Framework you can simple create some different quizzes i
 *    Crossword Quiz
 *    Word Search Puzzle
 *    Wordfind Quiz (Hangman Quiz)
+
 Please find examples how to use on the FAQ page.
 
 == Installation ==
@@ -121,8 +123,8 @@ For a crossword quiz, i.e. you could use:
 
 Furthermore at http://wiki.zum.de/Hilfe:Quiz-Script_Framework
 == Screenshots ==
-1. '/assets/screenshot-1.png'
-2. '/assets/screenshot-2.png'
+1. /assets/screenshot-1.png
+2. /assets/screenshot-2.png
 
 == Changelog ==
 = 1.1.1 (12-02-12) =
