@@ -24,7 +24,7 @@ With the Quiz JavaSript-Framework you can simple create some different quizzes i
 *    Wordfind Quiz (Hangman Quiz)
 
 Please find examples how to use and a detailed description of how you include the different types 
-of quizzes in an article or a page at http://helmut.hirner.at/2012/02/test-2/:HH -Quizzes .
+of quizzes in an article or a page at http://helmut.hirner.at/2012/02/test-2/
 
 == Installation ==
 
@@ -50,7 +50,7 @@ The most basic installation is a simple two step:
 == Frequently Asked Questions ==
 
 Please find examples how to use and a detailed description of how you include the different types 
-of quizzes in an article or a page at http://helmut.hirner.at/2012/02/test-2/:HH -Quizzes .
+of quizzes in an article or a page at http://helmut.hirner.at/2012/02/test-2/
 
 == Screenshots ==
 1. /assets/screenshot-1.png
