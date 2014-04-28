@@ -23,7 +23,8 @@ With the Quiz JavaSript-Framework you can simple create some different quizzes i
 *    Word Search Puzzle
 *    Wordfind Quiz (Hangman Quiz)
 
-Please find examples how to use on the FAQ page.
+Please find examples how to use and a detailed description of how you include the different types 
+of quizzes in an article or a page at http://helmut.hirner.at/2012/02/test-2/:HH -Quizzes .
 
 == Installation ==
 
@@ -48,87 +49,16 @@ The most basic installation is a simple two step:
 
 == Frequently Asked Questions ==
 
-When writing a page/post, you can use the follow syntax:
+Please find examples how to use and a detailed description of how you include the different types 
+of quizzes in an article or a page at http://helmut.hirner.at/2012/02/test-2/:HH -Quizzes .
 
-Multiple Choice Quiz : **<div class="multiplechoice-quiz">
-
-Wer hat Amerika entdeckt? (Christoph Kolumbus) (!Marco Polo) (!James Cook)
-
-Welches Tier ist ein Säugetier? (!Hai) (Wal) (Känguru) (!Meise) (Maus) (!Biene)
-
-Wie lange dauerte der dreißigjährige Krieg? (!4 Jahre) (!10 Jahre) (!20 Jahre) (30 Jahre) (!9 Monate)
-
-</div>**
-
-For a crossword quiz, i.e. you could use:
-**
-<div class="kreuzwort-quiz">
-			<h2 id="kreuzwort-quiz">Kleines Kreuzworträtsel</h2>
-
-			<p>Beim Klick auf die Ziffern im Kreuzworträtsel öffnet sich ein Eingabefeld zum Eintragen.</p>
-			<table>
-				<tr>
-					<td>Garten</td>
-					<td>bepflanzter Bereich um ein Haus</td>
-				</tr>
-				<tr>
-
-					<td>Biene</td>
-					<td>Insekt</td>
-				</tr>
-				<tr>
-					<td>Baum</td>
-					<td>Wald bildende Pflanze</td>
-				</tr>
-
-				<tr>
-					<td>Sonne</td>
-					<td>Himmelskörper, der nur am Tag zu sehen ist</td>
-				</tr>
-				<tr>
-					<td>Wind</td>
-					<td>wetterbestimmende Luftbewegung</td>
-
-				</tr>
-				<tr>
-					<td>Blume</td>
-					<td>allgemein für 'Pflanze, die blüht'</td>
-				</tr>
-				<tr>
-					<td>Birne</td>
-
-					<td>Baumobst</td>
-				</tr>
-				<tr>
-					<td>Schwein</td>
-					<td>Nutztier</td>
-				</tr>
-				<tr>
-
-					<td>Mütze</td>
-					<td>Kopfbedeckung</td>
-				</tr>
-				<tr>
-					<td>Pferd</td>
-					<td>Reittier</td>
-				</tr>
-
-				<tr>
-					<td>mäßig</td>
-					<td>Gegenteil von 'übertrieben'</td>
-				</tr>
-			</table>
-		</div>
-**
-
-Furthermore at http://wiki.zum.de/Hilfe:Quiz-Script_Framework
 == Screenshots ==
 1. /assets/screenshot-1.png
 2. /assets/screenshot-2.png
 
 == Changelog ==
-= 1.1.1 (12-02-12) =
+= 1.1.1 (29-04-14) =
 * more and better stylesheets added
 == Upgrade Notice ==
-= 1.1.1 ( 12-02-12 ) =
+= 1.1.1 (29-04-14) =
  * concerns stylesheets only
