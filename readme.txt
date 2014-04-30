@@ -35,22 +35,6 @@ The most basic installation is a simple two step:
 3. Upload the `hhquiz` folder to the `/wp-content/plugins/` directory.
 4. Activate the plugin through the 'Plugins' menu in WordPress.
 
-== Features ==
-*    Matching Quiz (match pairs)
-*    Matching Quiz (match groups)
-*    Gap Fill Quiz
-*    Puzzle (made with the gap fill quiz mechanism)
-*    Memo Quiz
-*    Multiple Choice Quiz
-*    Word Jumble Quiz
-*    Crossword Quiz
-*    Word Search Puzzle
-*    Wordfind Quiz (Hangman Quiz)
-
-== Frequently Asked Questions ==
-
-Please find examples how to use and a detailed description of how you include the different types 
-of quizzes in an article or a page at http://helmut.hirner.at/2012/02/test-2/
 
 == Screenshots ==
 1. /assets/screenshot-1.png
