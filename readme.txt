@@ -41,6 +41,11 @@ The most basic installation is a simple two step:
 2. /assets/screenshot-2.png
 
 == Changelog ==
+
+= 1.2 - 2014-07-03 =
+* bugfix styles
+* added dashboard entry
+
 = 1.1.1 (29-04-14) =
 * more and better stylesheets added
 == Upgrade Notice ==
