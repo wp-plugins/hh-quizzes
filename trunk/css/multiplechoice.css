@@ -1,0 +1,98 @@
+/* Stylesheet für Multiple Choice - Quizze */
+
+.multiplechoice-quiz {
+	display: block;
+	float: left;
+	margin: 10px 0px;
+	padding: 0px;
+	width: 100%;
+	border: 1px solid #d0d0d0;
+	background: none;
+	clear: both;
+}
+
+.multiplechoice-quiz h2 {
+	margin: 0px;
+	padding: 15px 20px;
+	clear: both;
+}
+
+.multiplechoice-quiz p {
+	clear: both;
+	margin: 0px;
+	padding: 10px 10px 0px 10px;
+	clear: both;
+}
+
+.multiplechoice-quiz .quiz-antworten {
+	display: block;
+	float: left;
+	width: 90%;
+	margin: 0px;
+	padding: 10px;
+	list-style-type: upper-alpha;
+	list-style-position: inside;
+}
+
+/* nicht für IE6 */
+.multiplechoice-quiz>.quiz-antworten {
+	list-style: none;
+	counter-reset: Ebene01;
+}
+
+/* nicht für IE6 */
+.quiz-antworten>li {
+	float: left;
+	margin: 0px 25px 5px 0px;
+	padding: 0px;
+}
+
+.multiplechoice-quiz .quiz-antworten li:before {
+	content: counter(Ebene01, upper-latin) ") ";
+	counter-increment: Ebene01;
+	padding-right: 5px;
+}
+
+.multiplechoice-quiz .quiz-antworten li input {
+	margin: 0;
+	padding: 0;
+}
+
+.multiplechoice-quiz .auswertungs-button {
+	margin: 5px;
+	padding: 0.2em 0.7em;
+	background: #ffe0e0;
+	border: 1px solid #ff8080;
+	text-align: center;
+}
+
+.multiplechoice-quiz .auswertungs-button a {
+	display: block;
+	width: 100%;
+	color: #ff0000;
+	text-decoration: none;
+	font-weight: bold;
+	background: none;
+}
+
+.multiplechoice-quiz .auswertungs-button a:hover {
+	color: #ff0000;
+	text-decoration: none;
+	font-weight: bold;
+	background: none;
+}
+
+.multiplechoice-quiz .richtig {
+	background: #c0ffc0;
+	border: 1px solid #00ff00;
+}
+
+.multiplechoice-quiz .falsch {
+	background: #ffc0c0;
+	border: 1px solid #ff0000;
+}
+
+.multiplechoice-quiz .quiz-bewertung {
+	margin: 0;
+	padding: 10px;
+}
