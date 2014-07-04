@@ -1,0 +1,68 @@
+/* Stylesheet für Memo-Spiele */
+
+.memo-quiz {
+	display: block;
+	float: left;
+	margin: 10px 0px;
+	padding: 0px;
+	width: 100%;
+	border: 1px solid #d0d0d0;
+	background: none;
+	clear: both;
+}
+
+.memo-quiz h2 {
+	margin: 0px;
+	padding: 15px 20px;
+	clear: both;
+}
+
+.memo-quiz p {
+	margin: 0px;
+	padding: 10px;
+	line-height: 2.5em;
+	clear: both;
+}
+
+.memo-quiz .feld,
+.memo-quiz .fertig {
+	display: block;
+	float: left;
+	width: 130px;
+	height: 130px;
+	margin: 0px 10px 10px 0px;
+	padding: 0px;
+	background: url(../images/memo-quiz_bg.png);
+	border: 1px solid #8080ff;
+	cursor: pointer;
+}
+
+.memo-quiz .feld img {
+	vertical-align: middle;
+}
+
+.memo-quiz .fertig {
+	background: #d0ffd0;
+	border: 1px solid #80ff80;
+}
+
+.memo-quiz .feld-inhalt {
+	display: table-cell;
+	visibility: hidden;
+	width: 130px;
+	height: 130px;
+	vertical-align:	middle;
+	text-align:	center;
+	margin: 0 auto;
+	line-height: 100%;
+}
+
+.memo-quiz .aktiv {
+	background: #ffd0d0;
+	border: 1px solid #ff8080;
+}
+
+.memo-quiz .aktiv .feld-inhalt,
+.memo-quiz .fertig .feld-inhalt {
+	visibility: visible;
+}

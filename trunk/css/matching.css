@@ -1,0 +1,98 @@
+/* Stylesheet für Zuordnungsübungen */
+
+.zuordnungs-quiz {
+	display: block;
+	float: left;
+	margin: 10px 0px;
+	padding: 0px;
+	width: 100%;
+	border: 1px solid #d0d0d0;
+	background: none;
+	clear: both;
+}
+
+.zuordnungs-quiz h2 {
+	margin: 0px;
+	padding: 15px 20px;
+	clear: both;
+}
+
+.zuordnungs-quiz p {
+	margin: 0px;
+	padding: 10px;
+	clear: both;
+}
+
+.zuordnungs-quiz .quiz-daten {
+	display: none;
+}
+
+.zuordnungs-quiz .daten-pool {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: #d0d0ff;
+	border: 1px solid #a0a0ff;
+	border-left: none;
+	border-right: none;
+}
+
+.zuordnungs-quiz .feld {
+	display: inline-block;
+	margin: 5px;
+	padding: 0.2em 0.7em;
+	background: #d0ffd0;
+	border: 1px solid #80ff80;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.zuordnungs-quiz .feld img {
+	vertical-align: bottom;
+	padding: 0px;
+	margin:  -0.2em -0.7em;
+}
+
+.zuordnungs-quiz .loesungs-paar {
+	display: table-cell;
+	float: left;
+	width: 100%;
+	margin: 0px 0px 10px 0px;
+	padding: 5px 0px;
+	background: #f0f0f0;
+	border: 1px solid #c0c0c0;
+	border-left: none;
+	border-right: none;
+}
+
+.zuordnungs-quiz .loesungs-paar .feld {
+	background: #d0d0d0;
+	border: 1px solid #a0a0a0;
+}
+
+.zuordnungs-quiz .auswertungs-button {
+	display: block;
+	float: left;
+	margin: 5px;
+	padding: 0.2em 0.7em;
+	background: #ffe0e0;
+	border: 1px solid #ff8080;
+	text-align: center;
+}
+
+.zuordnungs-quiz .auswertungs-button a {
+	color: #ff0000;
+	text-decoration: none;
+	background: none;
+	font-weight: bold;
+}
+
+.zuordnungs-quiz .auswertungs-button a:hover {
+	color: #ff6080;
+	text-decoration: none;
+	background: none;
+	font-weight: bold;
+}
+
