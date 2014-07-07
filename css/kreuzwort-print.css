@@ -1,0 +1,116 @@
+/* Druck-Stylesheet für Kreuzworträtsel */
+
+
+.kreuzwort-quiz {
+	clear: both;
+	display: block;
+	page-break-before: always;
+	page-break-inside: avoid;
+}
+
+.kreuzwort-quiz .eingabe {
+	display: none !important;
+}
+
+.kreuzwort-quiz .uebersicht {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 10px 0 0 0;
+	padding: 0;
+	height: 200px;
+}
+
+.kreuzwort-quiz .uebersicht dl {
+	display: block;
+	float: left;
+	width: 49%;
+	margin: 2em 0 0 0;
+	padding: 0;
+	list-style: none;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.kreuzwort-quiz .uebersicht dl:first-child {
+	border-right: none;
+}
+
+.kreuzwort-quiz .uebersicht dt {
+	border-bottom: 1px solid black;
+	font-size: 120%;
+	margin: 0 0 0.3em 0;
+}
+
+.kreuzwort-quiz .uebersicht dd {
+	margin: 0 10px 0 0;
+	padding: 0.1em 0 0 2em;
+}
+
+.kreuzwort-quiz .uebersicht dd span {
+	display: block;
+	float: left;
+	border: 1px solid black;
+	width: 1.5em;
+	text-align: center;
+	font-size: 60%;
+	margin: 0 0 0 -2em;
+	line-height: 150%;
+	padding: 0;
+}
+
+.kreuzwort-quiz .uebersicht dt {
+	font-weight: bold;
+	text-align: center;
+}
+
+.kreuzwort-quiz h2 {
+	margin: 0px;
+	padding: 15px 20px;
+	clear: both;
+}
+
+.kreuzwort-quiz p {
+	margin: 0px;
+	padding: 10px;
+	clear: both;
+}
+
+.kreuzwort-quiz .gitter {
+	display: block;
+	margin: 0 10px;
+	border-collapse: collapse;
+}
+
+.kreuzwort-quiz .gitter td {
+	margin: 0;
+	padding: 0;
+	width: 2em;
+	height: 2em;
+	overflow: hidden;
+}
+
+.kreuzwort-quiz .gitter .feld {
+	background: #ffffff;
+	border: 1px solid #000000;
+}
+
+.kreuzwort-quiz .eingabe-feld {
+	display: none;
+}
+
+.kreuzwort-quiz .gitter .einfuegemarke {
+	display: block;
+	width: auto;
+	position: relative;
+	top: -1em;
+	left: 0.1cm;
+	margin: 0px;
+	padding: 0px;
+	background: none;
+	text-align: left;
+	font-size: 9px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	color: #000000;
+}

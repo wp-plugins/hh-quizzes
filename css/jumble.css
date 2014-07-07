@@ -1,0 +1,64 @@
+/* Stylesheet für Schüttelrätsel */
+
+.schuettel-quiz {
+	display: block;
+	float: left;
+	margin: 10px 0px;
+	padding: 0px;
+	width: 100%;
+	border: 1px solid #d0d0d0;
+	background: none;
+	clear: both;
+}
+
+.schuettel-quiz h2 {
+	margin: 0px;
+	padding: 15px 20px;
+	clear: both;
+}
+
+.schuettel-quiz p {
+	margin: 0px;
+	padding: 10px;
+	clear: both;
+}
+
+.schuettel-quiz .luecke {
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	background: #f0f0f0;
+	border: 1px solid #c0c0c0;
+}
+
+.schuettel-quiz .luecke input {
+	margin: 0px 0 0px 2px;
+	padding: 0px;
+	font-size: 95%;
+	width: 5em;
+	text-align: center;
+	z-index: 100;
+}
+
+.schuettel-quiz .auswertungs-button {
+	margin: 5px;
+	padding: 0.2em 0.7em;
+	background: #ffe0e0;
+	border: 1px solid #ff8080;
+	text-align: center;
+}
+
+.schuettel-quiz .auswertungs-button a {
+	display: block;
+	width: 100%;
+	color: #ff0000;
+	text-decoration: none;
+	font-weight: bold;
+	background: none;
+}
+
+.schuettel-quiz .auswertungs-button a:hover {
+	color: #ff0000;
+	text-decoration: none;
+	font-weight: bold;
+	background: none;
+}

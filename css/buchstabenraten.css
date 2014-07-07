@@ -1,0 +1,171 @@
+
+.buchstabenraten-quiz {
+	display: block;
+	float: left;
+	margin: 10px 0px;
+	padding: 0px;
+	width: 100%;
+	border: 1px solid #d0d0d0;
+	background: none;
+	clear: both;
+}
+
+.buchstabenraten-quiz h2 {
+	margin: 0px;
+	padding: 15px 20px;
+}
+
+.buchstabenraten-quiz p {
+	margin: 0px;
+	padding: 10px;
+}
+
+.buchstabenraten-quiz div {
+	display: block;
+	position: relative;
+	width: auto;
+	background: #ffdddd;
+	border: 1px solid #000000;
+	margin: 0px 20px 20px 20px;
+}
+
+
+.buchstabenraten-quiz div *:last-child:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.buchstabenraten-quiz .start-link {
+	text-align: center;
+	font-weight: bold;
+}
+
+.buchstabenraten-quiz .start-link a:link {
+	display: inline-block;
+	color: #ff0000;
+	border: 1px solid #ff0000;
+	padding: 2px 5px;
+}
+
+.buchstabenraten-quiz .start-link a:hover {
+	text-decoration: none;
+	border: 2px solid #ff0000;
+	padding: 1px 4px;
+}
+
+.buchstabenraten-quiz .statusbild {
+	float: left;
+	margin: 10px;
+	padding: 0px;
+	border: 1px solid #000000;
+}
+
+.buchstabenraten-quiz .statusbild img {
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	background: #ffffff;
+}
+
+.buchstabenraten-quiz .eingabehinweis {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 18px;
+	height: 18px;
+	background: url(../images/help.gif) right top no-repeat;
+	cursor: help;
+	border: 1px solid transparent;
+}
+
+.buchstabenraten-quiz .eingabehinweis span {
+	display: none;
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	margin: 0;
+	padding: 1em 2em 1em 1em;
+	font-size: 75%;
+	font-weight: bold;
+	width: 300px;
+	height: auto;
+	background: #ffffff url(../images/help.gif) right top no-repeat;
+	border: 1px solid #888888;
+}
+
+.buchstabenraten-quiz .erkannte-woerter {
+	position: static;
+	float: right;
+	margin-top: 2em;
+	border: none;
+}
+
+.buchstabenraten-quiz .erkannte-woerter p {
+	text-align: center;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+.buchstabenraten-quiz .erkannte-woerter li.erkannt {
+	font-weight: bold;
+}
+
+.buchstabenraten-quiz .geratene-buchstaben {
+	position: static;
+	border: none;
+	clear: both;
+	padding: 0px;
+}
+
+.buchstabenraten-quiz .geratene-buchstaben p {
+	float: left;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0 20px 0 0;
+}
+
+.buchstabenraten-quiz .geratene-buchstaben ul {
+	list-style: none;
+}
+
+.buchstabenraten-quiz .geratene-buchstaben li {
+	float: left;
+	width: 1.2em;
+	margin: 0px 5px 5px 0;
+	padding: 0px;
+	border: 1px solid #ff0000;
+	background: #ff8888;
+	text-align: center;
+	font-weight: bold;
+	color: #ff0000;
+}
+
+.buchstabenraten-quiz .geratene-buchstaben li.treffer {
+	border: 1px solid #00ff00;
+	background: #ccffcc;
+	color: #00a000;
+}
+
+.buchstabenraten-quiz .ratewort {
+	float: left;
+	font-size: 130%;
+	margin-top: 4em;
+}
+
+.buchstabenraten-quiz .ratewort span {
+	display: inline-block;
+	width: 1.2em;
+	border: 1px solid #666666;
+	background: #cccccc;
+	margin: 0px 5px;
+	text-align: center;
+}
+
+.buchstabenraten-quiz .ratewort span.erraten {
+	border: 1px solid #00ff00;
+	background: #ccffcc;
+	color: #00a000;
+}
+
