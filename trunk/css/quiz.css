@@ -1,784 +1,0 @@
-.quiz-gezogen {
-	position: relative !important;
-	display: block;
-}
-
-.anvisiert {
-	border: 1px solid red !important;
-	background: #ffc0c0 !important;
-}
-
-.quiz-bewertung {
-	float: none;
-	clear: both;
-	border: 1px solid #00ff00;
-	background: #c0ffc0;
-	font-weight: bold;
-	text-align: center;
-}
-
-/* Anzeigeverhinderung der Quizze beim Laden der Seite */
-
-.zuordnungs-quiz,
-.lueckentext-quiz,
-.memo-quiz,
-.multiplechoice-quiz,
-.schuettel-quiz,
-.kreuzwort-quiz,
-.suchsel-quiz,
-.buchstabenraten-quiz {
-	display: none;
-}
-
-.buchstabenraten-quiz {
-	display: block;
-	float: left;
-	margin: 10px 0px;
-	padding: 0px;
-	width: 100%;
-	border: 1px solid #d0d0d0;
-	background: none;
-	clear: both;
-}
-
-.buchstabenraten-quiz h2 {
-	margin: 0px;
-	padding: 15px 20px;
-}
-
-.buchstabenraten-quiz p {
-	margin: 0px;
-	padding: 10px;
-}
-
-.buchstabenraten-quiz div {
-	display: block;
-	position: relative;
-	width: auto;
-	background: #ffdddd;
-	border: 1px solid #000000;
-	margin: 0px 20px 20px 20px;
-}
-
-.buchstabenraten-quiz div *:last-child:after {
-	content: " ";
-	display: block;
-	clear: both;
-}
-
-.buchstabenraten-quiz .start-link {
-	text-align: center;
-	font-weight: bold;
-}
-
-.buchstabenraten-quiz .start-link a:link {
-	display: inline-block;
-	color: #ff0000;
-	border: 1px solid #ff0000;
-	padding: 2px 5px;
-}
-
-.buchstabenraten-quiz .start-link a:hover {
-	text-decoration: none;
-	border: 2px solid #ff0000;
-	padding: 1px 4px;
-}
-
-.buchstabenraten-quiz .statusbild {
-	float: left;
-	margin: 10px;
-	padding: 0px;
-	border: 1px solid #000000;
-}
-
-.buchstabenraten-quiz .statusbild img {
-	float: left;
-	padding: 0px;
-	margin: 0px;
-	background: #ffffff;
-}
-
-.buchstabenraten-quiz .eingabehinweis {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 18px;
-	height: 18px;
-	background: url(../images/help.gif) right top no-repeat;
-	cursor: help;
-	border: 1px solid transparent;
-}
-
-.buchstabenraten-quiz .eingabehinweis span {
-	display: none;
-	position: absolute;
-	top: -1px;
-	right: -1px;
-	margin: 0;
-	padding: 1em 2em 1em 1em;
-	font-size: 75%;
-	font-weight: bold;
-	width: 300px;
-	height: auto;
-	background: #ffffff url(../images/help.gif) right top no-repeat;
-	border: 1px solid #888888;
-}
-
-.buchstabenraten-quiz .erkannte-woerter {
-	position: static;
-	float: right;
-	margin-top: 2em;
-	border: none;
-}
-
-.buchstabenraten-quiz .erkannte-woerter p {
-	text-align: center;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
-}
-
-.buchstabenraten-quiz .erkannte-woerter li.erkannt {
-	font-weight: bold;
-}
-
-.buchstabenraten-quiz .geratene-buchstaben {
-	position: static;
-	border: none;
-	clear: both;
-	padding: 0px;
-}
-
-.buchstabenraten-quiz .geratene-buchstaben p {
-	float: left;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0 20px 0 0;
-}
-
-.buchstabenraten-quiz .geratene-buchstaben ul {
-	list-style: none;
-}
-
-.buchstabenraten-quiz .geratene-buchstaben li {
-	float: left;
-	width: 1.2em;
-	margin: 0px 5px 5px 0;
-	padding: 0px;
-	border: 1px solid #ff0000;
-	background: #ff8888;
-	text-align: center;
-	font-weight: bold;
-	color: #ff0000;
-}
-
-.buchstabenraten-quiz .geratene-buchstaben li.treffer {
-	border: 1px solid #00ff00;
-	background: #ccffcc;
-	color: #00a000;
-}
-
-.buchstabenraten-quiz .ratewort {
-	float: left;
-	font-size: 130%;
-	margin-top: 4em;
-}
-
-.buchstabenraten-quiz .ratewort span {
-	display: inline-block;
-	width: 1.2em;
-	border: 1px solid #666666;
-	background: #cccccc;
-	margin: 0px 5px;
-	text-align: center;
-}
-
-.buchstabenraten-quiz .ratewort span.erraten {
-	border: 1px solid #00ff00;
-	background: #ccffcc;
-	color: #00a000;
-}
-
-/* Stylesheet für Schüttelrätsel */
-
-.schuettel-quiz {
-	display: block;
-	float: left;
-	margin: 10px 0px;
-	padding: 0px;
-	width: 100%;
-	border: 1px solid #d0d0d0;
-	background: none;
-	clear: both;
-}
-
-.schuettel-quiz h2 {
-	margin: 0px;
-	padding: 15px 20px;
-	clear: both;
-}
-
-.schuettel-quiz p {
-	margin: 0px;
-	padding: 10px;
-	clear: both;
-}
-
-.schuettel-quiz .luecke {
-	margin: 0px 0px 10px 0px;
-	padding: 0px;
-	background: #f0f0f0;
-	border: 1px solid #c0c0c0;
-}
-
-.schuettel-quiz .luecke input {
-	margin: 0px 0 0px 2px;
-	padding: 0px;
-	font-size: 95%;
-	width: 5em;
-	text-align: center;
-	z-index: 100;
-}
-
-.schuettel-quiz .auswertungs-button {
-	margin: 5px;
-	padding: 0.2em 0.7em;
-	background: #ffe0e0;
-	border: 1px solid #ff8080;
-	text-align: center;
-}
-
-.schuettel-quiz .auswertungs-button a {
-	display: block;
-	width: 100%;
-	color: #ff0000;
-	text-decoration: none;
-	font-weight: bold;
-	background: none;
-}
-
-.schuettel-quiz .auswertungs-button a:hover {
-	color: #ff0000;
-	text-decoration: none;
-	font-weight: bold;
-	background: none;
-}
-/* Stylesheet für Schüttelrätsel */
-
-.schuettel-quiz {
-	clear: both;
-	float: none;
-	display: block;
-	page-break-before: always;
-	page-break-inside: avoid;
-}
-
-.schuettel-quiz h2 {
-	margin: 0px;
-	padding: 15px 20px;
-	clear: both;
-}
-
-.schuettel-quiz p {
-	margin: 0px;
-	padding: 10px;
-	line-height: 200%;
-	clear: both;
-}
-
-.schuettel-quiz .luecke {
-	margin: 0px 0px 10px 0px;
-	padding: 0px;
-	background: #f0f0f0;
-	border: 1px solid #c0c0c0;
-	white-space: nowrap;
-}
-
-.schuettel-quiz .luecke input {
-	margin: 0px;
-	padding: 0px;
-	width: 8em;
-	visibility: hidden;
-}
-/* Stylesheet für Kreuzworträtsel */#content tr td {	padding: 6px 10px;}.kreuzwort-quiz {        max-width: 900px;	display: block;	float: left;	margin: 0px;	padding: 0px;	border: 1px solid #00ffff;	background: #EEDD82;	clear: both;}.kreuzwort-quiz h2 {        width: 100%;	color: blue;	margin: 0px;	padding: 15px 20px;	clear: both;}.kreuzwort-quiz p {        width: 100%;	margin: 0px;	padding: 0px;	clear: both;}.kreuzwort-quiz .gitter {        max-width: 900px;	display: block;	/*float: left;*/	margin: 0 0px;	border-collapse: collapse;}.kreuzwort-quiz .gitter tr {	max-width:900px;	margin:0;	padding: 0;	font-size: 10px;	line-height: 12px;}.kreuzwort-quiz .gitter td {	width:10px;	margin:0px 0px;	padding: 0px 0px;	text-align: center;	font-size: 12px;	color: #ff0000;	font-family: Verdana, sans-serif;	background: #FFEC8B; }.kreuzwort-quiz .gitter .feld {	background: #C6E2FF;	border: 1px solid #000000;	width:5px;	height:5px;	background-repeat:no-repeat;	margin: 0px 0px;	padding:0px 0px;}.kreuzwort-quiz .gitter .einfuegemarke {	display: block;	width: auto;	position: absolute;	margin: -15px 0 0 -15px;	padding: 0px 0px 0px 2px;	background: #ffffff;	font-size: 14px;	font-weight: bold;	font-family: Arial, sans-serif;}/* nicht für IE! */.kreuzwort-quiz .gitter td > .einfuegemarke {	margin: -20px 0 0 -20px;	padding: 0 0 0 2px;}.kreuzwort-quiz .eingabe {	display: none;	clear: both;	position: relative;	width: 350px;	background: #c0c0ff;	border: 1px solid #0000ff;}.kreuzwort-quiz .eingabe .eingabe-header {	background:  url(../images/eingabe_header.png) no-repeat top left;	height: 17px;	cursor: move;}.kreuzwort-quiz .eingabe .schliessen-button {	display: block;	width: 15px;	height: 17px;	margin: 0 0 0 auto;	background: url(../images/eingabe_schliessen.png) no-repeat top right;}/* Eingabehinweis, der sich beim Hovern über ein Hilfe-Symbol automatisch anzeigt */.kreuzwort-quiz .eingabehinweis {	position: absolute;	top: 17px; /* enspricht Höhe "eingabe-header" */	right: 0px;	background: url(../images/help.gif) right top no-repeat;	cursor: help;	border: 1px solid transparent;}.kreuzwort-quiz .eingabehinweis span {	display: none;	position: absolute;	top: -1px;	right: -1px;	margin: 0;	padding: 1em 2em 1em 1em;	font-size: 75%;	font-weight: bold;	width: 300px;	height: auto;	background: #ffffff url(../images/help.gif) right top no-repeat;	border: 1px solid #888888;}/* Anzeige der Nummer, die im Gitter angeklickt wurde */.kreuzwort-quiz .eingabe .nummer {	display: block;	float: left;	height: 1.2em;	margin: 0 2px 0 0;	padding: 0 3px;	font-size: 70%;	text-align: center;	border: 1px solid black;}.kreuzwort-quiz .eingabe .richtung {	display: block;	font-size: 75%;	font-weight: bold;}.kreuzwort-quiz .eingabezeile {	clear: both;	margin: 0 0 1em 0;	padding: 0 0 0 1em;	vertical-align: bottom;}.kreuzwort-quiz .eingabezeile span {	display: block;	float: left;	width: 1.2em;	height: 1.2em;	margin: 0 2px;	padding: 0;	border: 1px solid #60ff60;	background : #c0ffc0;	font-weight: bold;	text-align: center;	cursor: pointer;}.kreuzwort-quiz .eingabezeile span.aktiv {	border-color: #ff0000;	background: #c0ffc0;	color: #ff0000;}.kreuzwort-quiz .eingabezeile input {	margin: 0 0 0 10px;}.kreuzwort-quiz .texteingabefeld {	position: relative;	left: -20000px;	width: 2px;	font-size: 1%}.kreuzwort-quiz .auswertungs-button {	width: 100%;	height: 1.3em;}.kreuzwort-quiz .auswertungs-button a {	float: left;	margin: 0px;	padding: 0.2em 0.7em;	border: 1px solid #ff8080;	background: #ffe0e0;	color: #ff0000;	text-align: center;	text-decoration: none;	font-weight: bold;}.kreuzwort-quiz .auswertungs-button a:hover {	color: #ffe0e0;	text-decoration: none;	background: #ffa0a0;	font-weight: bold;}.kreuzwort-quiz .uebersicht {	display: none;}
-/* Stylesheet für Lückentextübungen */
-
-@import url(lueckentext-puzzle.css);
-
-.lueckentext-quiz {
-	display: block;
-	float: left;
-	margin: 10px 0px;
-	padding: 0px;
-	width: 100%;
-	border: 1px solid #d0d0d0;
-	background: none;
-	clear: both;
-}
-
-.lueckentext-quiz h2 {
-	margin: 0px;
-	padding: 15px 20px;
-	clear: both;
-}
-
-.lueckentext-quiz p {
-	margin: 0px;
-	padding: 10px;
-	line-height: 2.5em;
-	clear: both;
-}
-
-.lueckentext-quiz .daten-pool {
-	display: block;
-	float: left;
-	width: 100%;
-	margin: 0px;
-	padding: 5px 0px;
-	line-height: normal;
-	background: #d0d0ff;
-	border: 1px solid #a0a0ff;
-	border-left: none;
-	border-right: none;
-}
-
-.lueckentext-quiz .luecke {
-	margin: 0px 0px 10px 0px;
-	padding: 0px;
-	background: #d0ffd0;
-	border: 1px solid #80ff80;
-}
-
-.lueckentext-quiz .luecke img,
-.lueckentext-quiz .luecke_i img {
-	margin: 0px;
-	vertical-align: middle;
-}
-
-.lueckentext-quiz .luecke .anvisiert {
-	background: #ffd0d0;
-	border: 1px solid #ff0000;
-}
-
-.lueckentext-quiz .luecke_i input {
-	margin: 0px 0 0px 2px;
-	padding: 0px;
-	font-size: 95%;
-	text-align: center;
-	z-index: 100;
-}
-
-.lueckentext-quiz .feld {
-	display: block;
-	float: left;
-	margin: 0px 10px;
-	padding: 0.2em 0.7em;
-	background: #d0ffd0;
-	border: 1px solid #80ff80;
-	text-align: center;
-	line-height: normal;
-}
-
-.lueckentext-quiz .luecke .feld {
-	display: inline;
-	float: none;
-	margin: 0px;
-	padding: 0px 5px;
-}
-
-.lueckentext-quiz .auswertungs-button {
-	margin: 5px;
-	padding: 0.2em 0.7em;
-	background: #ffe0e0;
-	border: 1px solid #ff8080;
-	text-align: center;
-}
-
-.lueckentext-quiz .auswertungs-button a {
-	color: #ff0000;
-	text-decoration: none;
-	font-weight: bold;
-	background: none;
-}
-
-.lueckentext-quiz .auswertungs-button a:hover {
-	color: #ff0000;
-	text-decoration: none;
-	font-weight: bold;
-	background: none;
-}
-/* Zusatz-Stylesheet für Bilderpuzzle, die als "Lückentext" realisiert werden */
-
-.lueckentext-quiz table.puzzle {
-	border: 1px solid black;
-	padding: 0;
-	margin-bottom: 20px;
-	border-collapse: collapse;
-}
-
-.lueckentext-quiz table.puzzle * {
-	width: auto;
-	height: auto;
-	border: none;
-	margin: 0;
-	padding: 0;
-}
-
-.lueckentext-quiz table.puzzle .luecke {
-	display: block;
-	width: 100%;
-	height: 100%;
-	background: #f0f0f0;
-	border: none;
-	margin: 0;
-	padding: 0;
-}
-
-.lueckentext-quiz table.puzzle .luecke * {
-	border: none;
-	margin: 0;
-	padding: 0;
-}
-
-.lueckentext-quiz table.puzzle .anvisiert {
-	border: none !important;
-}
-
-/* Stylesheet für Zuordnungsübungen */
-
-.zuordnungs-quiz {
-	display: block;
-	float: left;
-	margin: 10px 0px;
-	padding: 0px;
-	width: 100%;
-	border: 1px solid #d0d0d0;
-	background: none;
-	clear: both;
-}
-
-.zuordnungs-quiz h2 {
-	margin: 0px;
-	padding: 15px 20px;
-	clear: both;
-}
-
-.zuordnungs-quiz p {
-	margin: 0px;
-	padding: 10px;
-	clear: both;
-}
-
-.zuordnungs-quiz .quiz-daten {
-	display: none;
-}
-
-.zuordnungs-quiz .daten-pool {
-	display: block;
-	float: left;
-	width: 100%;
-	margin: 0px;
-	padding: 0px;
-	background: #d0d0ff;
-	border: 1px solid #a0a0ff;
-	border-left: none;
-	border-right: none;
-}
-
-.zuordnungs-quiz .feld {
-	display: inline-block;
-	margin: 5px;
-	padding: 0.2em 0.7em;
-	background: #d0ffd0;
-	border: 1px solid #80ff80;
-	text-align: center;
-	vertical-align: middle;
-}
-
-.zuordnungs-quiz .feld img {
-	vertical-align: bottom;
-	padding: 0px;
-	margin:  -0.2em -0.7em;
-}
-
-.zuordnungs-quiz .loesungs-paar {
-	display: table-cell;
-	float: left;
-	width: 100%;
-	margin: 0px 0px 10px 0px;
-	padding: 5px 0px;
-	background: #f0f0f0;
-	border: 1px solid #c0c0c0;
-	border-left: none;
-	border-right: none;
-}
-
-.zuordnungs-quiz .loesungs-paar .feld {
-	background: #d0d0d0;
-	border: 1px solid #a0a0a0;
-}
-
-.zuordnungs-quiz .auswertungs-button {
-	display: block;
-	float: left;
-	margin: 5px;
-	padding: 0.2em 0.7em;
-	background: #ffe0e0;
-	border: 1px solid #ff8080;
-	text-align: center;
-}
-
-.zuordnungs-quiz .auswertungs-button a {
-	color: #ff0000;
-	text-decoration: none;
-	background: none;
-	font-weight: bold;
-}
-
-.zuordnungs-quiz .auswertungs-button a:hover {
-	color: #ff6080;
-	text-decoration: none;
-	background: none;
-	font-weight: bold;
-}
-
-/* Stylesheet für Memo-Spiele */
-
-.memo-quiz {
-	display: block;
-	float: left;
-	margin: 10px 0px;
-	padding: 0px;
-	width: 100%;
-	border: 1px solid #d0d0d0;
-	background: none;
-	clear: both;
-}
-
-.memo-quiz h2 {
-	margin: 0px;
-	padding: 15px 20px;
-	clear: both;
-}
-
-.memo-quiz p {
-	margin: 0px;
-	padding: 10px;
-	line-height: 2.5em;
-	clear: both;
-}
-
-.memo-quiz .feld,
-.memo-quiz .fertig {
-	display: block;
-	float: left;
-	width: 130px;
-	height: 130px;
-	margin: 0px 10px 10px 0px;
-	padding: 0px;
-	background: url(../images/memo-quiz_bg.png);
-	border: 1px solid #8080ff;
-	cursor: pointer;
-}
-
-.memo-quiz .feld img {
-	vertical-align: middle;
-}
-
-.memo-quiz .fertig {
-	background: #d0ffd0;
-	border: 1px solid #80ff80;
-}
-
-.memo-quiz .feld-inhalt {
-	display: table-cell;
-	visibility: hidden;
-	width: 130px;
-	height: 130px;
-	vertical-align:	middle;
-	text-align:	center;
-	margin: 0 auto;
-	line-height: 100%;
-}
-
-.memo-quiz .aktiv {
-	background: #ffd0d0;
-	border: 1px solid #ff8080;
-}
-
-.memo-quiz .aktiv .feld-inhalt,
-.memo-quiz .fertig .feld-inhalt {
-	visibility: visible;
-}
-/* Stylesheet für Multiple Choice - Quizze */
-
-.multiplechoice-quiz {
-	display: block;
-	float: left;
-	margin: 10px 0px;
-	padding: 0px;
-	width: 100%;
-	border: 1px solid #d0d0d0;
-	background: none;
-	clear: both;
-}
-
-.multiplechoice-quiz h2 {
-	margin: 0px;
-	padding: 15px 20px;
-	clear: both;
-}
-
-.multiplechoice-quiz p {
-	clear: both;
-	margin: 0px;
-	padding: 10px 10px 0px 10px;
-	clear: both;
-}
-
-.multiplechoice-quiz .quiz-antworten {
-	display: block;
-	float: left;
-	width: 90%;
-	margin: 0px;
-	padding: 10px;
-	list-style-type: upper-alpha;
-	list-style-position: inside;
-}
-
-/* nicht für IE6 */
-.multiplechoice-quiz>.quiz-antworten {
-	list-style: none;
-	counter-reset: Ebene01;
-}
-
-/* nicht für IE6 */
-.quiz-antworten>li {
-	float: left;
-	margin: 0px 25px 5px 0px;
-	padding: 0px;
-}
-
-.multiplechoice-quiz .quiz-antworten li:before {
-	content: counter(Ebene01, upper-latin) ") ";
-	counter-increment: Ebene01;
-	padding-right: 5px;
-}
-
-.multiplechoice-quiz .quiz-antworten li input {
-	margin: 0;
-	padding: 0;
-}
-
-.multiplechoice-quiz .auswertungs-button {
-	margin: 5px;
-	padding: 0.2em 0.7em;
-	background: #ffe0e0;
-	border: 1px solid #ff8080;
-	text-align: center;
-}
-
-.multiplechoice-quiz .auswertungs-button a {
-	display: block;
-	width: 100%;
-	color: #ff0000;
-	text-decoration: none;
-	font-weight: bold;
-	background: none;
-}
-
-.multiplechoice-quiz .auswertungs-button a:hover {
-	color: #ff0000;
-	text-decoration: none;
-	font-weight: bold;
-	background: none;
-}
-
-.multiplechoice-quiz .richtig {
-	background: #c0ffc0;
-	border: 1px solid #00ff00;
-}
-
-.multiplechoice-quiz .falsch {
-	background: #ffc0c0;
-	border: 1px solid #ff0000;
-}
-
-.multiplechoice-quiz .quiz-bewertung {
-	margin: 0;
-	padding: 10px;
-}
-/* Stylesheet für suchselrätsel */
-
-.suchsel-quiz {
-	display: block;
-	float: left;
-	margin: 10px 0px;
-	padding: 0px;
-	width: 100%;
-	border: 1px solid #d0d0d0;
-	background: none;
-	clear: both;
-}
-
-.suchsel-quiz h2 {
-	margin: 0px;
-	padding: 15px 20px;
-	clear: both;
-}
-
-.suchsel-quiz p {
-	margin: 0px;
-	padding: 10px;
-	clear: both;
-}
-
-.suchsel-quiz .gitter {
-	display: block;
-	float: left;
-	margin: 0 10px;
-	border-collapse: collapse;
-}
-
-.suchsel-quiz .gitter td {
-	margin: 0;
-	padding: 0;
-	width: 1.5em;
-	height: 1.5em;
-	text-align: center;
-	font-weight: bold;
-	font-family: Verdana, sans-serif;
-	border: 1px solid #000000;
-	cursor: pointer;
-}
-
-.suchsel-quiz .gitter.fertig td {
-	cursor: default;
-}
-
-.suchsel-quiz .gitter .feld {
-	background: #dddddd;
-}
-
-.suchsel-quiz .gitter .aufgedeckt {
-	background: #aaffaa;
-}
-
-.suchsel-quiz .gitter .markiert {
-	background: #ffffcc;
-}
-
-.suchsel-quiz .gitter .hover {
-	background: #ffcccc;
-}
-
-.suchsel-quiz .liste {
-	float: left;
-	margin: 0 20px 0 20px;
-	padding: 20px 20px 20px 40px;
-	border: 1px solid black;
-}
-
-.suchsel-quiz .liste .ausgefuellt {
-	font-weight: bold;
-}
