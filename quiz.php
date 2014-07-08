@@ -3,7 +3,7 @@
 Plugin Name: HH Quizzes
 Plugin URI: http://helmut.hirner.at/2012/02/test-2/
 Description: Zur einfachen Verwendung des GPL JavaScript-Framewoks gleichen Namens von Felix Riesterer - es ermöglicht das Erstellen verschieder Quiz
-Version: 1.2
+Version: 1.3
 Author: Helmut Hirner
 Author URI: http://helmut.hirner.at/
 License: GPLv2 or later
