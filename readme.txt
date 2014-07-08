@@ -44,7 +44,6 @@ The most basic installation is a simple two step:
 = 1.3 - 2014-07-08 =
 * files updated
 
-
 = 1.2 - 2014-07-03 =
 * bugfix styles
 * added dashboard entry
