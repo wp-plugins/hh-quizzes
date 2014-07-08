@@ -1,7 +1,0 @@
-
-.memo-quiz .feld-inhalt {
-	display: block;
-	height: auto;
-	margin-top: expression((this.parentNode.offsetHeight - this.offsetHeight) / 2);
-}
-
