@@ -1,0 +1,13 @@
+/* Anzeigeverhinderung der Quizze beim Laden der Seite */
+
+.zuordnungs-quiz,
+.lueckentext-quiz,
+.memo-quiz,
+.multiplechoice-quiz,
+.schuettel-quiz,
+.kreuzwort-quiz,
+.suchsel-quiz,
+.buchstabenraten-quiz {
+	display: none;
+}
+

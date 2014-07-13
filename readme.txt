@@ -4,7 +4,7 @@ Donate link: http://www.hirner.at/
 Tags: JavaScript, Quiz, multiple choice,
 Requires at least: 2.0
 Tested up to: 3.9
-Stable tag: 1.3
+Stable tag: 2.0
 
 HH Quiz just enables the Quiz JavaScript-Framework (GNU Lesser General Public License) from Felix Riesterer.
 
@@ -39,6 +39,11 @@ The most basic installation is a simple two step:
 == Screenshots ==
 1. /assets/screenshot-1.png
 2. /assets/screenshot-2.png
+
+== Changelog ==
+= 2.0 - 2014-07-13 =
+* anzeige-blocker.css added
+* examples added to option page
 
 == Changelog ==
 = 1.3 - 2014-07-08 =
