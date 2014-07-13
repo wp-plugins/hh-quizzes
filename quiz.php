@@ -3,7 +3,7 @@
 Plugin Name: HH Quizzes
 Plugin URI: http://helmut.hirner.at/2012/02/test-2/
 Description: Zur einfachen Verwendung des GPL JavaScript-Framewoks gleichen Namens von Felix Riesterer - es ermöglicht das Erstellen verschieder Quiz
-Version: 1.3
+Version: 2.0
 Author: Helmut Hirner
 Author URI: http://helmut.hirner.at/
 License: GPLv2 or later
@@ -39,29 +39,46 @@ add_action( 'wp_enqueue_scripts', 'add_hhquizzes_styles' );
 function add_hhquizzes_styles() {
 	wp_register_style( 'hh-quizzes', plugins_url( 'hh-quizzes/css/quiz.css' ) );
 	wp_enqueue_style( 'hh-quizzes' );
+	wp_register_style( 'hh-quizzesab', plugins_url( 'hh-quizzes/css/anzeige-blocker.css' ) );
+	wp_enqueue_style( 'hh-quizzesab' );
 } 
 
 
-/** Step 2 (from text above). */
 add_action( 'admin_menu', 'hh_quizzes_menu' );
 
-/** Step 1. */
 function hh_quizzes_menu() {
 	add_options_page( 'HH Quizzes Options', 'HH Quizzes', 'manage_options', 'hh-quizzes', 'hh_quizzes_options' );
 }
 
-/** Step 3. */
 function hh_quizzes_options() {
 	if ( !current_user_can( 'manage_options' ) )  {
 		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
 	}
 	echo '<div class="wrap">';
 	echo '<h2>HH Quizzes</h2>';
+	echo 'Please use the text mode, not the visual mode in your WP editor to paste the example code in. After that, 
+you can easily adjust the code according to your wishes.</p>';
 	echo '<p style="large">Please find examples how to use and also a detailed description on how you include the different types 
-of quizzes in an article or a page, at <a href="http://helmut.hirner.at/2012/02/test-2/" target="_blanc">HH Quizzes</a>. <br />
-Please use the text mode, not the visual mode in your WP editor to paste the example code in. After that, 
-you can easily adjust the code according to your wishes. <br />
-Have Fun!</p>';
+of quizzes in an article or a page, at <a href="http://helmut.hirner.at/2012/02/test-2/" target="_blank">HH Quizzes</a>, respectively on: </p>';
+   echo '<ol>
+<li><a href="http://helmut.hirner.at/2014/05/zuordnungs-quiz-paarweise-mit-dragdrop/" target="_blank">Zuordnungs-Quiz (paarweise; mit Drag&amp;Drop)</a>
+Matching Quiz (match pairs)</li>
+<li><a href="http://helmut.hirner.at/2014/07/zuordnungs-quiz-gruppenweise/" target="_blank">Zuordnungs-Quiz (gruppenweise)</a> 
+Matching Quiz (match groups)</li>
+<li><a href="http://helmut.hirner.at/2014/05/bilderpuzzle-basierend-auf-dem-lueckentext-quiz/" target="_blank">Bilderpuzzle (basierend auf dem Lückentext-Quiz)</a>
+Picture Puzzle (made with the gap fill quiz mechanism)</li>
+<li><a href="http://helmut.hirner.at/2014/05/memo-quiz/" target="_blank">Memo-Quiz</a></li>
+<li><a href="http://helmut.hirner.at/2014/05/multiple-choice-quiz/" target="_blank">Multiple Choice - Quiz</a></li>
+<li><a href="http://helmut.hirner.at/2014/05/schuettelraetsel-quiz-buchstabenweise-mit-eingabefeldern/" target="_blank">Schüttelrätsel-Quiz (buchstabenweise; mit Eingabefeldern)</a>
+Word Jumble Quiz</li>
+<li><a href="http://helmut.hirner.at/2014/05/kreuzwortraetsel/" target="_blank">Kreuzworträtsel</a>
+Crossword Quiz</li>
+<li><a href="http://helmut.hirner.at/2014/05/suchsel/" target="_blank">Suchsel</a>
+Word Search Puzzle</li>
+<li><a href="http://helmut.hirner.at/2014/05/buchstabenraten-hangman/" target="_blank">Buchstabenraten (Hangman)</a>
+Wordfind Quiz (Hangman Quiz)</li>
+</ol>';
+echo' <p>Have Fun!</p>';
 	echo '</div>';
 }
 ?>
