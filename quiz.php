@@ -3,7 +3,7 @@
 Plugin Name: HH Quizzes
 Plugin URI: http://helmut.hirner.at/2012/02/test-2/
 Description: Zur einfachen Verwendung des GPL JavaScript-Framewoks gleichen Namens von Felix Riesterer - es ermöglicht das Erstellen verschieder Quiz
-Version: 2.0
+Version: 3.0
 Author: Helmut Hirner
 Author URI: http://helmut.hirner.at/
 License: GPLv2 or later
@@ -30,6 +30,7 @@ add_action('wp_enqueue_scripts', 'hhquizzes_script'); // For use on the Front en
 
 function hhquizzes_script() {
 wp_enqueue_script('hhquizzes', plugins_url('hh-quizzes/quiz.js'));
+wp_enqueue_script('hhquizzes', plugins_url('hh-quizzes/multilingual.js'));
 }    
  
 
@@ -78,7 +79,9 @@ Word Search Puzzle</li>
 <li><a href="http://helmut.hirner.at/2014/05/buchstabenraten-hangman/" target="_blank">Buchstabenraten (Hangman)</a>
 Wordfind Quiz (Hangman Quiz)</li>
 </ol>';
-echo' <p>Have Fun!</p>';
+echo 'Mulitlingual Script enabled. Use de,(Deutsch), en (English), es (Español), fr (Français), it (Italiano), 
+pl (Polski), la (Latin) with lang ="xx" in the div tag to create a quiz in one of the mentioned languages.';
+echo '<p>Have Fun!</p>';
 	echo '</div>';
 }
 ?>

@@ -4,7 +4,7 @@ Donate link: http://www.hirner.at/
 Tags: JavaScript, Quiz, multiple choice,
 Requires at least: 2.0
 Tested up to: 3.9
-Stable tag: 2.0
+Stable tag: 3.0
 
 HH Quiz just enables the Quiz JavaScript-Framework (GNU Lesser General Public License) from Felix Riesterer.
 
@@ -26,6 +26,9 @@ With the Quiz JavaSript-Framework you can simple create some different quizzes i
 Please find examples how to use and a detailed description of how you include the different types 
 of quizzes in an article or a page at http://helmut.hirner.at/2012/02/test-2/
 
+Use de,(Deutsch), en (English), es (Español), fr (Français), it (Italiano), pl (Polski), 
+la (Latin) with lang ="xx" in the div tag to create a quiz in one of the mentioned languages.
+
 == Installation ==
 
 The most basic installation is a simple two step:
@@ -39,6 +42,10 @@ The most basic installation is a simple two step:
 == Screenshots ==
 1. /assets/screenshot-1.png
 2. /assets/screenshot-2.png
+
+== Changelog ==
+= 3.0 - 2014-08-08 =
+* Mulitlingual Script enabled.
 
 == Changelog ==
 = 2.0 - 2014-07-13 =
