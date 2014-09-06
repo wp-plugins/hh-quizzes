@@ -3,7 +3,7 @@ Contributors: Helmut Hirner
 Donate link: http://www.hirner.at/
 Tags: JavaScript, Quiz, multiple choice,
 Requires at least: 2.0
-Tested up to: 3.9
+Tested up to: 4.0
 Stable tag: 3.0
 
 HH Quiz just enables the Quiz JavaScript-Framework (GNU Lesser General Public License) from Felix Riesterer.
