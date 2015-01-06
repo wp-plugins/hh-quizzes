@@ -44,15 +44,16 @@ The most basic installation is a simple two step:
 2. /assets/screenshot-2.png
 
 == Changelog ==
+= 2014-01-06 =
+* updated
+
 = 3.0 - 2014-08-08 =
 * Mulitlingual Script enabled.
 
-== Changelog ==
 = 2.0 - 2014-07-13 =
 * anzeige-blocker.css added
 * examples added to option page
 
-== Changelog ==
 = 1.3 - 2014-07-08 =
 * files updated
 
