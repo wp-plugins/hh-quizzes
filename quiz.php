@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: HH Quizzes
-Plugin URI: http://helmut.hirner.at/2012/02/test-2/
+Plugin URI: http://notizblog.digital/2012/02/test-2/
 Description: Zur einfachen Verwendung des GPL JavaScript-Framewoks gleichen Namens von Felix Riesterer - es ermöglicht das Erstellen verschieder Quiz
 Version: 3.0
 Author: Helmut Hirner
-Author URI: http://helmut.hirner.at/
+Author URI: http://notizblog.digital/
 License: GPLv2 or later
 */
 
@@ -60,23 +60,23 @@ function hh_quizzes_options() {
 	echo 'Please use the text mode, not the visual mode in your WP editor to paste the example code in. After that, 
 you can easily adjust the code according to your wishes.</p>';
 	echo '<p style="large">Please find examples how to use and also a detailed description on how you include the different types 
-of quizzes in an article or a page, at <a href="http://helmut.hirner.at/2012/02/test-2/" target="_blank">HH Quizzes</a>, respectively on: </p>';
+of quizzes in an article or a page, at <a href="http://notizblog.digital/2012/02/test-2/" target="_blank">HH Quizzes</a>, respectively on: </p>';
    echo '<ol>
-<li><a href="http://helmut.hirner.at/2014/05/zuordnungs-quiz-paarweise-mit-dragdrop/" target="_blank">Zuordnungs-Quiz (paarweise; mit Drag&amp;Drop)</a>
+<li><a href="http://notizblog.digital/2014/05/zuordnungs-quiz-paarweise-mit-dragdrop/" target="_blank">Zuordnungs-Quiz (paarweise; mit Drag&amp;Drop)</a>
 Matching Quiz (match pairs)</li>
-<li><a href="http://helmut.hirner.at/2014/07/zuordnungs-quiz-gruppenweise/" target="_blank">Zuordnungs-Quiz (gruppenweise)</a> 
+<li><a href="http://notizblog.digital/2014/07/zuordnungs-quiz-gruppenweise/" target="_blank">Zuordnungs-Quiz (gruppenweise)</a> 
 Matching Quiz (match groups)</li>
-<li><a href="http://helmut.hirner.at/2014/05/bilderpuzzle-basierend-auf-dem-lueckentext-quiz/" target="_blank">Bilderpuzzle (basierend auf dem Lückentext-Quiz)</a>
+<li><a href="http://notizblog.digital/2014/05/bilderpuzzle-basierend-auf-dem-lueckentext-quiz/" target="_blank">Bilderpuzzle (basierend auf dem Lückentext-Quiz)</a>
 Picture Puzzle (made with the gap fill quiz mechanism)</li>
-<li><a href="http://helmut.hirner.at/2014/05/memo-quiz/" target="_blank">Memo-Quiz</a></li>
-<li><a href="http://helmut.hirner.at/2014/05/multiple-choice-quiz/" target="_blank">Multiple Choice - Quiz</a></li>
-<li><a href="http://helmut.hirner.at/2014/05/schuettelraetsel-quiz-buchstabenweise-mit-eingabefeldern/" target="_blank">Schüttelrätsel-Quiz (buchstabenweise; mit Eingabefeldern)</a>
+<li><a href="http://notizblog.digital/2014/05/memo-quiz/" target="_blank">Memo-Quiz</a></li>
+<li><a href="http://notizblog.digital/2014/05/multiple-choice-quiz/" target="_blank">Multiple Choice - Quiz</a></li>
+<li><a href="http://notizblog.digital/2014/05/schuettelraetsel-quiz-buchstabenweise-mit-eingabefeldern/" target="_blank">Schüttelrätsel-Quiz (buchstabenweise; mit Eingabefeldern)</a>
 Word Jumble Quiz</li>
-<li><a href="http://helmut.hirner.at/2014/05/kreuzwortraetsel/" target="_blank">Kreuzworträtsel</a>
+<li><a href="http://notizblog.digital/2014/05/kreuzwortraetsel/" target="_blank">Kreuzworträtsel</a>
 Crossword Quiz</li>
-<li><a href="http://helmut.hirner.at/2014/05/suchsel/" target="_blank">Suchsel</a>
+<li><a href="http://notizblog.digital/2014/05/suchsel/" target="_blank">Suchsel</a>
 Word Search Puzzle</li>
-<li><a href="http://helmut.hirner.at/2014/05/buchstabenraten-hangman/" target="_blank">Buchstabenraten (Hangman)</a>
+<li><a href="http://notizblog.digital/2014/05/buchstabenraten-hangman/" target="_blank">Buchstabenraten (Hangman)</a>
 Wordfind Quiz (Hangman Quiz)</li>
 </ol>';
 echo 'Mulitlingual Script enabled. Use de,(Deutsch), en (English), es (Español), fr (Français), it (Italiano), 
